@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MORDERN IT FIRM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    body {
+         margin: 2cm;
+        font-family: 'Arial', sans-serif;
+        background-color: #1717;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .content {
+        padding: 20px;
+    }
+</style>
+  </head>
+ 
+  <body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact us</a>
+    </div>
+
+    <div class="first">
+        <h1>WELCOME TO OUR CAMPUS</h1>
+            <img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg" alt="Programmer Setup">
+    </div>
+    <h2 style="color:rgb(255, 0, 55);text-align:center;"><strong>The Courses Offered At Our Campus</strong></h2>
+    
+
+    <style>
+        /* CSS styling for the .first div */
+.first {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.first h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.first img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.first h2 {
+  color: #555;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.first h2 strong {
+  color: #333;
+}
+    </style>
+
+<style>
+    .my-div {
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 60px; /* Adjust the value as needed */
+        max-width: 1200px;
+        background-image: url("https://images.unsplash.com/photo-1546146830-2cca9512c68e?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover; /* Adjust as needed */
+        background-position: center; /* Adjust as needed */
+        background-repeat: no-repeat;
+        height: 500px; /* Set a height for the div */
+        color: #fff; /* Text color, adjust as needed */
+        
+        }
+</style>
+
+<div class="my-div"> 
+    <ol>
+        {%for x in ac%}
+        <h3><li> <a href=" /{{x.id}}/">{{x.coursename}}</a></li></h3> 
+        {% endfor %}
+    </ol>
+</div>
+  </body>
+</html>
+
